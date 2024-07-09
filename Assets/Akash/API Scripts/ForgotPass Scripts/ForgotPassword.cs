@@ -33,7 +33,7 @@ public class ForgotPassword : MonoBehaviour
         byte[] rawBody = Encoding.UTF8.GetBytes(josnBody);
 
         Debug.Log(josnBody);
-        UnityWebRequest request = UnityWebRequest.Post(_url, "application/json");
+        UnityWebRequest request = UnityWebRequest.PostWwwForm(_url, "application/json");
 
         request.SetRequestHeader("Content-Type", "application/json");
         request.uploadHandler = new UploadHandlerRaw(rawBody);
@@ -76,7 +76,7 @@ public class ForgotPassword : MonoBehaviour
 
         Debug.Log(jsonBody);
 
-        UnityWebRequest request = UnityWebRequest.Post(_url, "application/json");
+        UnityWebRequest request = UnityWebRequest.PostWwwForm(_url, "application/json");
 
         request.SetRequestHeader("Content-Type", "application/json");
         request.uploadHandler = new UploadHandlerRaw(rawBody);

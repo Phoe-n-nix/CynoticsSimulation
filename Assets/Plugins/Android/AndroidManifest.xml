@@ -34,6 +34,6 @@ package="com.unity3d.player" android:installLocation="preferExternal" android:ve
     <provider android:name="com.facebook.FacebookContentProvider" android:authorities="com.facebook.app.FacebookContentProvider826564662331781" android:exported="true" />
     
     <!--This was added by the AnalyticsFixPropertyRemover. If you want to prevent the generation of this, have "AnalyticsFixPropertyRemover" included in a comment-->
-    <property tools:node="removeAll"/>
+    
   </application>
 </manifest>
